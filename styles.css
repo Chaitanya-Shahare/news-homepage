@@ -317,9 +317,9 @@ footer {
   margin-right: -30px;
 }
 
-.openbtn:hover {
-  background-color: hsl(36, 100%, 99%);
-}
+/* .openbtn:hover { */
+/*   background-color: hsl(36, 100%, 99%); */
+/* } */
 
 #main {
   transition: margin-left .5s;
