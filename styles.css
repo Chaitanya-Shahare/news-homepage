@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+::selection {
+	color: white;
+	background-color: hsl(5, 85%, 63%);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	padding: 5% 12%;
+	font-family: 'Inter', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	/* margin-bottom: 3%; */
+	margin-top: -2%;
+}
+
+.logo {
+	margin-bottom: -25px;
+}
+
+.navbar {
+	width:50%
+
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: end;
+	margin-right: 0;
+	padding-bottom: 7%;
+	margin-bottom: 2%;
+	font-size: 15px;
+	color: hsl(236, 13%, 42%);
+}
+
+li {
+	margin-left: 30px;
+	text-align: right;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container1 {
+	width: 70%;
+}
+
+.container1 .image1,
+.container1 .image2{
+	width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+	.container1 .image2{
+		display: none;
+	}
+	.hide {
+		display: none;
+	}
+}
+
+.heading1 {
+	width: 50%;
+	color: black;
+	margin-top: none;
+}
+
+.heading1 h1 {
+	margin-top: 30px;
+	font-size: 3.2em;
+	width: 70%;
+	font-weight: 800;
+}
+
+.info-container {
+	display: flex;
+	font-size: 15px;
+	color: hsl(236, 13%, 42%);
+}
+
+.info-container .info {
+	width: 50%;
+}
+
+.info-container p {
+	margin-top: 30px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+button {
+	color: hsl(36, 100%, 99%);
+	background-color: hsl(5, 85%, 63%);
+	border: none;
+	font-size: 15px;
+	padding: 15px 30px;
+	letter-spacing: 5px;
+	margin-top: 20px;
+	font-weight: bolder;
+}
+
+.container2 {
+	width: 28%;
+	/* height: 55vh; */
+	background-color: hsl(240, 100%, 5%);
+	color: white;
+	height: 60%;
+}
+
+.content {
+	font-size: 15px;
+	/* padding: 20px 25px; */
+	padding: 7% 10%;
+}
+
+.container2 .content .heading {
+	margin-top: 8px;
+	margin-bottom: 33;
+	color: hsl(35, 77%, 62%);
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+.container2 .sub-heading {
+	color: hsl(36, 100%, 99%);
+}
+
+.container2 .description {
+	font-size: 15px;
+	color: hsl(233, 8%, 79%);
+}
+
+.container2 .divider {
+	border: 0.4px solid hsl(236, 13%, 42%);
+	height: 0;
+	margin: 30px 0;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+	flex-wrap: wrap;
+}
+
+.block {
+	display: flex;
+	justify-content: space-between;
+	width: 33%;
+	min-width: 355px;
+}
+
+/* .footer-image { */
+/* 	width: 10%; */
+/* } */
+
+.footer-image img {
+	width: 6em;
+}
+
+.footer-info {
+	width: 68%;
+	overflow: contain;
+}
+
+.footer-info h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 2em;
+	color: hsl(233, 8%, 79%);
+}
+
+.footer-info h4 {
+	font-size: 1.1em;
+}
+
+.footer-info h4,
+.footer-info p {
+	margin: 9px 0;
+}
+
+.footer-info p {
+	color: hsl(236, 13%, 42%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  body {
+	padding: 5%;
+  }
+  
+  .container1 .image1 {
+	display: none;
+  }
+
+  .container2 .image2 {
+    display: inline-block;
+  }
+
+  ul {
+	  display: none;
+  }
+
+  header {
+	  height: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ----------------------------side-bar---------------------------body { */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40%;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: hsl(240, 100%, 5%);
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: -39px;
+  margin-right: -40px;
+}
+
+.openbtn:hover {
+  background-color: hsl(36, 100%, 99%);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 15px;}
+}
